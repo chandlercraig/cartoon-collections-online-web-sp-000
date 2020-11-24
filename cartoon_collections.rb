@@ -16,5 +16,8 @@ end
 
 def find_the_cheese(food_arr)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  food_arr.any? { |food| food == (cheese_types[0] || cheese_types[1] || cheese_types[2]}
+  if food_arr.any? {|food| food == (cheese_types[0] || cheese_types[1] || cheese_types[2]}
+    food_arr.find {|food| food == (cheese_types[0] || cheese_types[1] || cheese_types[2]}
+  else
+    nil
 end
