@@ -20,4 +20,5 @@ def find_the_cheese(food_arr)
     food_arr.find {|food| food == (cheese_types[0] || cheese_types[1] || cheese_types[2])}
   else
     nil
+  end
 end
